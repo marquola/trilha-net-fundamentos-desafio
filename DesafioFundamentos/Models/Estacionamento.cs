@@ -33,11 +33,12 @@ namespace DesafioFundamentos.Models
             {
 
 
+                Console.WriteLine("Digite a quantia de horas que voce ficou");
+                int horas = int.Parse(Console.ReadLine());
 
-                int horas = 0;
-                decimal valorTotal = 0;
-                Console.ReadLine();
-                Console.WriteLine($"{precoInicial} + {precoPorHora} * {horas} = {valorTotal}");
+                decimal valorTotal = precoInicial + (precoPorHora * horas);
+
+
 
 
                 veiculos.Remove($"{placa}");
